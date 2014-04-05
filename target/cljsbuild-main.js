@@ -3629,16 +3629,16 @@ cljs.core.fn_QMARK_ = function(a) {
 };
 cljs.core.with_meta = function with_meta(b, c) {
   return cljs.core.fn_QMARK_.call(null, b) && !(b ? b.cljs$lang$protocol_mask$partition0$ & 262144 || b.cljs$core$IWithMeta$ || (b.cljs$lang$protocol_mask$partition0$ ? 0 : cljs.core.native_satisfies_QMARK_.call(null, cljs.core.IWithMeta, b)) : cljs.core.native_satisfies_QMARK_.call(null, cljs.core.IWithMeta, b)) ? with_meta.call(null, function() {
-    "undefined" === typeof cljs.core.t5513 && (cljs.core.t5513 = function(b, c, f, g) {
+    "undefined" === typeof cljs.core.t5507 && (cljs.core.t5507 = function(b, c, f, g) {
       this.meta = b;
       this.o = c;
       this.with_meta = f;
-      this.meta5514 = g;
+      this.meta5508 = g;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393217;
-    }, cljs.core.t5513.cljs$lang$type = !0, cljs.core.t5513.cljs$lang$ctorStr = "cljs.core/t5513", cljs.core.t5513.cljs$lang$ctorPrWriter = function(b, c, f) {
-      return cljs.core._write.call(null, c, "cljs.core/t5513");
-    }, cljs.core.t5513.prototype.call = function() {
+    }, cljs.core.t5507.cljs$lang$type = !0, cljs.core.t5507.cljs$lang$ctorStr = "cljs.core/t5507", cljs.core.t5507.cljs$lang$ctorPrWriter = function(b, c, f) {
+      return cljs.core._write.call(null, c, "cljs.core/t5507");
+    }, cljs.core.t5507.prototype.call = function() {
       var b = function(b, c) {
         return cljs.core.apply.call(null, b.o, c);
       }, c = function(c, e) {
@@ -3655,9 +3655,9 @@ cljs.core.with_meta = function with_meta(b, c) {
       };
       c.cljs$core$IFn$_invoke$arity$variadic = b;
       return c;
-    }(), cljs.core.t5513.prototype.apply = function(b, c) {
+    }(), cljs.core.t5507.prototype.apply = function(b, c) {
       return this.call.apply(this, [this].concat(cljs.core.aclone.call(null, c)));
-    }, cljs.core.t5513.prototype.cljs$core$IFn$_invoke$arity$2 = function() {
+    }, cljs.core.t5507.prototype.cljs$core$IFn$_invoke$arity$2 = function() {
       var b = function(b) {
         return cljs.core.apply.call(null, self__.o, b);
       }, c = function(c) {
@@ -3672,14 +3672,14 @@ cljs.core.with_meta = function with_meta(b, c) {
       };
       c.cljs$core$IFn$_invoke$arity$variadic = b;
       return c;
-    }(), cljs.core.t5513.prototype.cljs$core$Fn$ = !0, cljs.core.t5513.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-      return this.meta5514;
-    }, cljs.core.t5513.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-      return new cljs.core.t5513(this.meta, this.o, this.with_meta, c);
-    }, cljs.core.__GT_t5513 = function(b, c, f, g) {
-      return new cljs.core.t5513(b, c, f, g);
+    }(), cljs.core.t5507.prototype.cljs$core$Fn$ = !0, cljs.core.t5507.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+      return this.meta5508;
+    }, cljs.core.t5507.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+      return new cljs.core.t5507(this.meta, this.o, this.with_meta, c);
+    }, cljs.core.__GT_t5507 = function(b, c, f, g) {
+      return new cljs.core.t5507(b, c, f, g);
     });
-    return new cljs.core.t5513(c, b, with_meta, null);
+    return new cljs.core.t5507(c, b, with_meta, null);
   }(), c) : null == b ? null : cljs.core._with_meta.call(null, b, c);
 };
 cljs.core.meta = function(a) {
@@ -16702,28 +16702,28 @@ ecv.views.dfmt = function(a) {
   return cljs_time.format.unparse.call(null, cljs_time.format.formatter.call(null, "yyyy-MM"), a);
 };
 ecv.views.github_label = function(a) {
-  return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "href", "href", 1017115293), a], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "img", "img", 1014008629), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "style", "style", 1123684643), "position: absolute; top: 0; left: 0; border: 0;", 
-  new cljs.core.Keyword(null, "src", "src", 1014018390), "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png", new cljs.core.Keyword(null, "alt", "alt", 1014000923), "Fork me on GitHub"], null)], null)], null);
+  return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a.github-label", "a.github-label", 3511975017), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "href", "href", 1017115293), a], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "img", "img", 1014008629), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "style", "style", 
+  1123684643), "position: absolute; top: 0; left: 0; border: 0;", new cljs.core.Keyword(null, "src", "src", 1014018390), "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png", new cljs.core.Keyword(null, "alt", "alt", 1014000923), "Fork me on GitHub"], null)], null)], null);
 };
 ecv.views.layout = function(a) {
-  return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "html", "html", 1017117469), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "lang", "lang", 1017218400), "en"], null), new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "head", "head", 1017102674), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
-  "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "charset", "charset", 1752978622), "utf-8"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "IE\x3dedge", new cljs.core.Keyword(null, "http-equiv", "http-equiv", 848818723), "X-UA-Compatible"], 
-  null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "width\x3ddevice-width, initial-scale\x3d1", new cljs.core.Keyword(null, "name", "name", 1017277949), "viewport"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
-  "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "", new cljs.core.Keyword(null, "name", "name", 1017277949), "description"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "", new cljs.core.Keyword(null, 
-  "name", "name", 1017277949), "author"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "link", "link", 1017226092), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "href", "href", 1017115293), "img/favicon.ico", new cljs.core.Keyword(null, "rel", "rel", 1014017035), "shortcut icon"], null)], null), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
-  "title", "title", 1124275658), (new cljs.core.Keyword(null, "name", "name", 1017277949)).cljs$core$IFn$_invoke$arity$1(a), " ", (new cljs.core.Keyword(null, "position_sought", "position_sought", 3397297858)).cljs$core$IFn$_invoke$arity$1(a)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "link", "link", 1017226092), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "rel", "rel", 1014017035), "stylesheet", 
-  new cljs.core.Keyword(null, "href", "href", 1017115293), "css/bootstrap.min.css"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "link", "link", 1017226092), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "rel", "rel", 1014017035), "stylesheet", new cljs.core.Keyword(null, "href", "href", 1017115293), "css/cover.css"], null)], null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-  [new cljs.core.Keyword(null, "body", "body", 1016933652), ecv.views.github_label.call(null, cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "basic", "basic", 1107412896), new cljs.core.Keyword(null, "github_profile", "github_profile", 3417418943)], null))), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.site-wrapper", "div.site-wrapper", 
-  2227068348), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.site-wrapper-inner", "div.site-wrapper-inner", 3210305669), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.cover-container", "div.cover-container", 3088489984), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.masthead.clearfix", "div.masthead.clearfix", 
-  1745354102), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.inner", "div.inner", 2032091691), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "h3.masthead-brand", "h3.masthead-brand", 2750106884), cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "basic", "basic", 1107412896), 
-  new cljs.core.Keyword(null, "name", "name", 1017277949)], null))], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "ul.nav.masthead-nav", "ul.nav.masthead-nav", 4071479935), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "li", "li", 1013907695), function() {
+  return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "html", "html", 1017117469), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "lang", "lang", 1017218400), "en"], null), new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "head", "head", 1017102674), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
+  "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "IE\x3dedge", new cljs.core.Keyword(null, "http-equiv", "http-equiv", 848818723), "X-UA-Compatible"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "width\x3ddevice-width, initial-scale\x3d1", 
+  new cljs.core.Keyword(null, "name", "name", 1017277949), "viewport"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "", new cljs.core.Keyword(null, "name", "name", 1017277949), "description"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [new cljs.core.Keyword(null, "meta", "meta", 1017252215), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "content", "content", 1965434859), "", new cljs.core.Keyword(null, "name", "name", 1017277949), "author"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "link", "link", 1017226092), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "href", "href", 1017115293), "img/favicon.ico", 
+  new cljs.core.Keyword(null, "rel", "rel", 1014017035), "shortcut icon"], null)], null), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "title", "title", 1124275658), (new cljs.core.Keyword(null, "name", "name", 1017277949)).cljs$core$IFn$_invoke$arity$1(a), " ", (new cljs.core.Keyword(null, "position_sought", "position_sought", 3397297858)).cljs$core$IFn$_invoke$arity$1(a)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [new cljs.core.Keyword(null, "link", "link", 1017226092), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "rel", "rel", 1014017035), "stylesheet", new cljs.core.Keyword(null, "href", "href", 1017115293), "css/bootstrap.min.css"], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "link", "link", 1017226092), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "rel", "rel", 1014017035), 
+  "stylesheet", new cljs.core.Keyword(null, "href", "href", 1017115293), "css/cover.css"], null)], null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "body", "body", 1016933652), ecv.views.github_label.call(null, cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "basic", "basic", 1107412896), new cljs.core.Keyword(null, "github_profile", 
+  "github_profile", 3417418943)], null))), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.site-wrapper", "div.site-wrapper", 2227068348), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.site-wrapper-inner", "div.site-wrapper-inner", 3210305669), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.cover-container", 
+  "div.cover-container", 3088489984), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.masthead.clearfix", "div.masthead.clearfix", 1745354102), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.inner", "div.inner", 2032091691), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "h3.masthead-brand", "h3.masthead-brand", 
+  2750106884), cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "basic", "basic", 1107412896), new cljs.core.Keyword(null, "name", "name", 1017277949)], null))], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "ul.nav.masthead-nav", "ul.nav.masthead-nav", 4071479935), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [new cljs.core.Keyword(null, "li", "li", 1013907695), function() {
     var b = cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "basic", "basic", 1107412896), new cljs.core.Keyword(null, "phone", "phone", 1120547040)], null));
     return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "href", "href", 1017115293), [cljs.core.str("phone:"), cljs.core.str(b)].join("")], null), b], null);
   }()], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "li", "li", 1013907695), function() {
     var b = cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "basic", "basic", 1107412896), new cljs.core.Keyword(null, "email", "email", 1110523662)], null));
     return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "href", "href", 1017115293), [cljs.core.str("mailto:"), cljs.core.str(b)].join("")], null), b], null);
   }()], null)], null), new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.inner.cover", "div.inner.cover", 3920876468), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "p.intro", "p.intro", 3047371488), (new cljs.core.Keyword(null, "introduction", "introduction", 2553498508)).cljs$core$IFn$_invoke$arity$1(a)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-  [new cljs.core.Keyword(null, "h3.section", "h3.section", 600609844), "some interesting things I've done"], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "ul.badges", "ul.badges", 4308868057), function() {
+  [new cljs.core.Keyword(null, "h3.section", "h3.section", 600609844), "Some interesting things I've done"], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "ul.badges", "ul.badges", 4308868057), function() {
     return function c(a) {
       return new cljs.core.LazySeq(null, function() {
         for (;;) {
@@ -16912,18 +16912,47 @@ null), new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null, "p
 [new cljs.core.Keyword(null, "position", "position", 1761709211), "Bioinformatics Programmer", new cljs.core.Keyword(null, "employer", "employer", 2207373869), "University of New Orleans", new cljs.core.Keyword(null, "location", "location", 2914947879), "New Orleans, LA", new cljs.core.Keyword(null, "start-date", "start-date", 3689065899), cljs_time.core.date_time.call(null, 2011, 1), new cljs.core.Keyword(null, "end-date", "end-date", 2692795602), cljs_time.core.date_time.call(null, 2012, 5), new cljs.core.Keyword(null, 
 "description", "description", 3584325486), "" + cljs.core.str("As the maintainer of a statistics and visualization tool for microbial ecology, I communicated with users to assess needs and determine direction of the project. Responsible for the maintenance of an entire webapp stack, from operating system updates to user interface design, I led the selection and adoption of a bug-tracking system to satisfy stakeholders. During this time we moved the application's architecture from ad-hoc function calls over HTTP toward a RESTful API and AJAX client. Python Django numpy scipy matplotlib")], 
 null), new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null, "position", "position", 1761709211), "Software Developer", new cljs.core.Keyword(null, "employer", "employer", 2207373869), "Consulting", new cljs.core.Keyword(null, "location", "location", 2914947879), "New Orleans, LA", new cljs.core.Keyword(null, "start-date", "start-date", 3689065899), cljs_time.core.date_time.call(null, 2010, 1), new cljs.core.Keyword(null, "end-date", "end-date", 2692795602), cljs_time.core.date_time.call(null, 
-2012, 5), new cljs.core.Keyword(null, "description", "description", 3584325486), [cljs.core.str("I used many different technologies here, building custom"), cljs.core.str(" webapps using Ruby on Rails, PHP, and Django. I also fixed bugs in a legacy accounting and reporting system in Java (basically an undocumented hacked-up quickbooks plugin)")].join("")], null)], null)], null);
-ecv.core = {};
-cljs.core.enable_console_print_BANG_.call(null);
-ecv.core._main = function() {
-  return cljs.core.println.call(null, "" + cljs.core.str(hiccups.runtime.render_html.call(null, ecv.views.layout.call(null, ecv.data.cvdata))));
-};
-cljs.core._STAR_main_cli_fn_STAR_ = ecv.core._main;
+2012, 5), new cljs.core.Keyword(null, "description", "description", 3584325486), [cljs.core.str("I used many different technologies here, building custom"), cljs.core.str(" webapps using Ruby on Rails, PHP, and Django. I also fixed bugs in a legacy accounting and reporting system in Java.")].join("")], null)], null)], null);
 cljs.nodejs = {};
 cljs.nodejs.require = require;
 cljs.nodejs.process = process;
 cljs.nodejs.enable_util_print_BANG_ = function() {
   return cljs.core.string_print = cljs.nodejs.require.call(null, "util").print;
 };
+ecv.core = {};
+cljs.core.enable_console_print_BANG_.call(null);
+ecv.core.nodemailer = cljs.nodejs.require.call(null, "nodemailer");
+ecv.core.prompt = cljs.nodejs.require.call(null, "prompt");
+ecv.core.fs = cljs.nodejs.require.call(null, "fs");
+ecv.core.user_email = "johnnybrown7@gmail.com";
+ecv.core.send_application_BANG_ = function(a, b, c, d) {
+  var e = ecv.core.prompt;
+  e.start();
+  e.get(cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "properties", "properties", 4382818469), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "password", "password", 2230889997), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "hidden", "hidden", 4091384092), !0], null)], null)], null)), function(e) {
+    return function(g, h) {
+      var k = h.password, l = ecv.core.nodemailer.createTransport("SMTP", cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "service", "service", 2998057511), "Gmail", new cljs.core.Keyword(null, "auth", "auth", 1016910106), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "user", "user", 1017503549), ecv.core.user_email, new cljs.core.Keyword(null, "pass", "pass", 1017337731), k], null)], null)));
+      return ecv.core.fs.readFile(c, function(c, e, f) {
+        return function(g, h) {
+          return ecv.core.fs.readFile(d, function(c, d, e) {
+            return function(f, g) {
+              return d.sendMail(cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null, "text", "text", 1017460895), g, new cljs.core.Keyword(null, "from", "from", 1017056028), ecv.core.user_email, new cljs.core.Keyword(null, "to", "to", 1013907949), a, new cljs.core.Keyword(null, "subject", "subject", 3440986270), h, new cljs.core.Keyword(null, "html", "html", 1017117469), g, new cljs.core.Keyword(null, "attachments", "attachments", 4569874210), new cljs.core.PersistentVector(null, 
+              1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "filePath", "filePath", 4573209395), b, new cljs.core.Keyword(null, "fileName", "fileName", 4573149593), "resume.pdf"], null)], null)], null)), function(a, b, c) {
+                return function(a, b) {
+                  cljs.core.println.call(null, "" + cljs.core.str(cljs.core.truth_(a) ? a : b.message));
+                  return process.exit(0);
+                };
+              }(c, d, e));
+            };
+          }(c, e, f));
+        };
+      }(k, l, e));
+    };
+  }(e));
+  return e;
+};
+ecv.core._main = function() {
+  return 3 > cljs.core.count.call(null, process.argv) ? cljs.core.println.call(null, "" + cljs.core.str(hiccups.runtime.render_html.call(null, ecv.views.layout.call(null, ecv.data.cvdata)))) : cljs.core.apply.call(null, ecv.core.send_application_BANG_, cljs.core.drop.call(null, 2, process.argv));
+};
+cljs.core._STAR_main_cli_fn_STAR_ = ecv.core._main;
 cljs.nodejscli = {};
 cljs.core.apply.call(null, cljs.core._STAR_main_cli_fn_STAR_, cljs.core.drop.call(null, 2, cljs.nodejs.process.argv));
