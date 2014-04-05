@@ -14,7 +14,6 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -31,7 +30,6 @@ body {
 }
 body {
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -91,14 +89,14 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
+
+.masthead-brand {
     float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
 }
+.masthead-nav {
+    float: right;
+}
+
 
 
 /*
@@ -190,4 +188,10 @@ div.inner.cover ul {
 }
 p.education-desc {
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    a.github-label {
+        display: none;
+    }
 }

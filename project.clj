@@ -1,4 +1,4 @@
-(defproject ecv "0.1.0-SNAPSHOT"
+(defproject ecv "0.1.0-alpha4"
   :description "One of the presumably many CV or resume management tools created by funemployed programmers"
   :url "http://example.com/FIXME"
   :license {:name "GNU GPL"
@@ -6,9 +6,12 @@
   :plugins [[lein-npm "0.4.0"]
             [lein-cljsbuild "1.0.3"]]
 
-  :node-dependencies []
+  :node-dependencies [[emailjs "0.3.6"]
+                      [prompt "0.2.12"]
+                      [nodemailer "0.6.1"]]
   :main "target/cljsbuild-main.js"
-  :nodejs {:private false}
+  :nodejs {:private false
+           :bin {"ecv" "target/cljsbuild-main.js"}}
   :cljsbuild
     {:builds
      [{:id "node"

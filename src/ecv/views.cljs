@@ -5,7 +5,7 @@
   (unparse (formatter "yyyy-MM") dt))
 
 (defn github-label [url]
- [:a
+ [:a.github-label
   {:href url}
   [:img
    {:style "position: absolute; top: 0; left: 0; border: 0;",
@@ -17,7 +17,7 @@
   [:html
   {:lang "en"}
   [:head
-   [:meta {:charset "utf-8"}]
+   ;; [:meta {:charset "utf-8"}]
    [:meta {:content "IE=edge", :http-equiv "X-UA-Compatible"}]
    [:meta
     {:content "width=device-width, initial-scale=1", :name "viewport"}]
@@ -42,7 +42,7 @@
                 [:a {:href (str "mailto:" email)} email])]]
         [:div.inner.cover ;; main content goes here
          [:p.intro (:introduction cv)]
-         [:h3.section "some interesting things I've done"]
+         [:h3.section "Some interesting things I've done"]
          [:ul.badges (for [[desc url] (:badges cv)]
                        [:li [:a {:href url} desc]])]
          [:h3.section "Experience"]

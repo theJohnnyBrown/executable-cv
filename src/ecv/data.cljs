@@ -47,5 +47,5 @@
                  :description
                  (str
                   "I used many different technologies here, building custom"
-                  " webapps using Ruby on Rails, PHP, and Django. I also fixed bugs in a legacy accounting and reporting system in Java (basically an undocumented hacked-up quickbooks plugin)")}
+                  " webapps using Ruby on Rails, PHP, and Django. I also fixed bugs in a legacy accounting and reporting system in Java.")}
                 ]})
