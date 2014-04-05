@@ -3,11 +3,12 @@
   :url "http://example.com/FIXME"
   :license {:name "GNU GPL"
             :url "https://gnu.org/licenses/gpl.html"}
-  :plugins [[lein-npm "0.3.2"]
+  :plugins [[lein-npm "0.4.0"]
             [lein-cljsbuild "1.0.3"]]
 
   :node-dependencies []
-
+  :main "target/cljsbuild-main.js"
+  :nodejs {:private false}
   :cljsbuild
     {:builds
      [{:id "node"

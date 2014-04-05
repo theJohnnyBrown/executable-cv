@@ -23,12 +23,12 @@
     {:content "width=device-width, initial-scale=1", :name "viewport"}]
    [:meta {:content "", :name "description"}]
    [:meta {:content "", :name "author"}]
-   [:link {:href "/img/favicon.ico", :rel "shortcut icon"}]
+   [:link {:href "img/favicon.ico", :rel "shortcut icon"}]
    [:title (:name cv) " " (:position_sought cv)]
    [:link {:rel "stylesheet", :href "css/bootstrap.min.css"}]
    [:link {:rel "stylesheet", :href "css/cover.css"}]]
   [:body
-   (github-label (:github_profile cv))
+   (github-label (get-in cv [:basic :github_profile]))
    [:div.site-wrapper
     [:div.site-wrapper-inner
      [:div.cover-container
@@ -36,30 +36,35 @@
        [:div.inner
         [:h3.masthead-brand (get-in cv [:basic :name])]
         [:ul.nav.masthead-nav
-         [:li [:a {:href "/"} (get-in cv [:basic :phone])]]
-         [:li [:a {:href "/"} (get-in cv [:basic :email])]]]
+         [:li (let [phone (get-in cv [:basic :phone])]
+                [:a {:href (str "phone:" phone)} phone])]
+         [:li (let [email (get-in cv [:basic :email])]
+                [:a {:href (str "mailto:" email)} email])]]
         [:div.inner.cover ;; main content goes here
          [:p.intro (:introduction cv)]
+         [:h3.section "some interesting things I've done"]
          [:ul.badges (for [[desc url] (:badges cv)]
                        [:li [:a {:href url} desc]])]
+         [:h3.section "Experience"]
          [:ul.experience
           (for [{:keys
                  [position employer location start-date end-date description]}
                 (:experience cv)]
             [:li
-             [:span.experience-employer employer]
-             [:span.experience-position position]
-             [:span.experience-date.date-in-range (dfmt start-date)]
-             " - "
-             [:span.experience-date.date-in-range (dfmt end-date)]
-             [:span.experience-desc description]])]
+             [:div.experience-heading
+              [:span.experience-employer employer] " - "
+              [:span.experience-position position]
+              [:span.experience-date.date-in-range
+               (dfmt start-date) " - " (dfmt end-date)]]
+             [:p.experience-desc description]])]
+         [:h3.section "Education"]
          [:ul.education (for [{:keys [name start-date end-date description]}
                               (:education cv)]
                           [:li
-                           [:span.education-title name]
-                           [:span.education-date.date-in-range (dfmt start-date)]
-                           " - "
-                           [:span.education-date.date-in-range (dfmt end-date)]
-                           [:span.education-desc description]])]]
+                           [:div.education-heading
+                            [:span.education-title name]
+                            [:span.education-date.date-in-range
+                             (dfmt start-date) " - " (dfmt end-date)]]
+                           [:p.education-desc description]])]]
 
         ]]]]]]])
