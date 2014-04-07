@@ -1,5 +1,13 @@
 (ns ecv.views
-  (:require [cljs-time.format :refer [formatter unparse]]))
+  (:require [cljs-time.format :refer [formatter unparse]]
+            [cljs.nodejs :as nodejs]))
+(enable-console-print!)
+
+(def fs (nodejs/require "fs"))
+
+(def __dirname (js* "__dirname"))
+(defn resource-path [fname]
+  (str __dirname "/../resources/" fname))
 
 (defn dfmt [dt]
   (unparse (formatter "yyyy-MM") dt))
@@ -25,8 +33,8 @@
    [:meta {:content "", :name "author"}]
    [:link {:href "img/favicon.ico", :rel "shortcut icon"}]
    [:title (:name cv) " " (:position_sought cv)]
-   [:link {:rel "stylesheet", :href "css/bootstrap.min.css"}]
-   [:link {:rel "stylesheet", :href "css/cover.css"}]]
+   [:style (.readFileSync fs (resource-path "css/bootstrap.min.css"))]
+   [:style (.readFileSync fs (resource-path "css/cover.css"))]]
   [:body
    (github-label (get-in cv [:basic :github_profile]))
    [:div.site-wrapper

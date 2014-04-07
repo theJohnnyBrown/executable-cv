@@ -10,7 +10,7 @@
              "http://dev.clojure.org/jira/browse/CLJS-581"]
             ["Contributed to pandas"
              "https://github.com/pydata/pandas/commit/6c7ec42cd3015b1cf547a01a5c664db3e3abf42b"]
-            ["Invented structured format for CVs" "."]
+            ["Invented structured format for CVs" "https://github.com/theJohnnyBrown/executable-cv"]
             ["Collaborated on a library" "https://github.com/theJohnnyBrown/endophile"]
             ["Wrote a tutorial" "http://www.thejohnnybrown.com/integrating-linkedin-oauth-with-an-existing-django-app/"]]
    :introduction "Hi. I've made my living making software for people (or sometimes for myself) since 2011. You'll find most of the relevant details in this document, but the gist is that I examine the users' needs to understand how their problems can be solved by software. Solutions implemented so far have involved a variety of languages, with deliverables ranging from web applications, scientific visualizations, developer tools, tutorials, and predictive algorithms."
@@ -39,7 +39,7 @@
                  :start-date (date-time 2011 1) :end-date (date-time 2012 5)
                  :description
                  (str
-                  "As the maintainer of a statistics and visualization tool for microbial ecology, I communicated with users to assess needs and determine direction of the project. Responsible for the maintenance of an entire webapp stack, from operating system updates to user interface design, I led the selection and adoption of a bug-tracking system to satisfy stakeholders. During this time we moved the application's architecture from ad-hoc function calls over HTTP toward a RESTful API and AJAX client. Python Django numpy scipy matplotlib")}
+                  "As the maintainer of a statistics and visualization tool for microbial ecology, I communicated with users to assess needs and determine direction of the project. Responsible for the operation of an entire webapp stack, from operating system updates to user interface design, I led the selection and adoption of a bug-tracking system to satisfy stakeholders. During this time we moved the application's architecture from ad-hoc function calls over HTTP toward a RESTful API and AJAX client. Python Django numpy scipy matplotlib")}
                 {:position "Software Developer"
                  :employer "Consulting"
                  :location "New Orleans, LA"
@@ -47,5 +47,6 @@
                  :description
                  (str
                   "I used many different technologies here, building custom"
-                  " webapps using Ruby on Rails, PHP, and Django. I also fixed bugs in a legacy accounting and reporting system in Java.")}
+
+                  " webapps using Ruby on Rails, PHP, and Django. I also maintained a legacy accounting and reporting system in Java.")}
                 ]})

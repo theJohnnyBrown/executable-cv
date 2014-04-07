@@ -1,5 +1,5 @@
-(defproject ecv "0.1.0-alpha4"
-  :description "One of the presumably many CV or resume management tools created by funemployed programmers"
+(defproject ecv "0.1.0-alpha12"
+  :description "one of the presumably many CV or resume management tools created by funemployed programmers"
   :url "http://example.com/FIXME"
   :license {:name "GNU GPL"
             :url "https://gnu.org/licenses/gpl.html"}
