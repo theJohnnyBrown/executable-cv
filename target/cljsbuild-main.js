@@ -16715,7 +16715,7 @@ ecv.views.dfmt = function(a) {
 };
 ecv.views.github_label = function(a) {
   return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a.github-label", "a.github-label", 3511975017), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "href", "href", 1017115293), a], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "img", "img", 1014008629), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "style", "style", 
-  1123684643), "position: absolute; top: 0; left: 0; border: 0;", new cljs.core.Keyword(null, "src", "src", 1014018390), "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png", new cljs.core.Keyword(null, "alt", "alt", 1014000923), "Fork me on GitHub"], null)], null)], null);
+  1123684643), "position: absolute; top: 0; left: 0; border: 0; z-index: 9999;", new cljs.core.Keyword(null, "src", "src", 1014018390), "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png", new cljs.core.Keyword(null, "alt", "alt", 1014000923), "Fork me on GitHub"], null)], null)], null);
 };
 ecv.views.layout = function(a) {
   return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "html", "html", 1017117469), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "lang", "lang", 1017218400), "en"], null), new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "head", "head", 1017102674), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
