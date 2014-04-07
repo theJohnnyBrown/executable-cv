@@ -16,9 +16,9 @@
  [:a.github-label
   {:href url}
   [:img
-   {:style "position: absolute; top: 0; left: 0; border: 0;",
+   {:style "position: absolute; top: 0; left: 0; border: 0; z-index: 9999;"
     :src
-    "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png",
+    "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"
     :alt "Fork me on GitHub"}]])
 
 (defn layout [cv]
