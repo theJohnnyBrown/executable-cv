@@ -1,4 +1,11 @@
-target/*
-!target/cljsbuild-main.js
-!resources
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+resources/index.html
 node_modules
