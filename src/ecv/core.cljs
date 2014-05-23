@@ -1,7 +1,8 @@
 (ns ecv.core
   (:require-macros [hiccups.core :as hiccups])
   (:require [hiccups.runtime :as hiccupsrt]
-            [ecv.data :refer [cvdata]]
+            [ecv.data :refer [cvdata bio-emph clojure-emph django-emph
+                              stats-leadership-emph]]
             [ecv.views :as v]
             [cljs.nodejs :as nodejs]))
 
@@ -42,7 +43,7 @@
 
 (defn -main []
  (if (< (count (.-argv js/process)) 3)
-  (println (hiccups/html (v/layout cvdata)))
+  (println (hiccups/html (v/layout bio-emph)))
   (apply send-application! (drop 2 (.-argv js/process)))))
 
 (set! *main-cli-fn* -main)
